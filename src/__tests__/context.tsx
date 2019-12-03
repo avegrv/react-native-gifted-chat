@@ -16,7 +16,7 @@ class Context extends React.Component {
   getChildContext() {
     return {
       actionSheet: () => {},
-      getLocale: () => 'en',
+      getLocale: () => 'ru',
     }
   }
   render() {

@@ -354,7 +354,7 @@ class GiftedChat<TMessage extends IMessage = IMessage> extends React.Component<
   _bottomOffset: number = 0
   _maxHeight?: number = undefined
   _isFirstLayout: boolean = true
-  _locale: string = 'en'
+  _locale: string = 'ru'
   invertibleScrollViewProps: any = undefined
   _actionSheetRef: any = undefined
 
@@ -426,11 +426,11 @@ class GiftedChat<TMessage extends IMessage = IMessage> extends React.Component<
   initLocale() {
     if (
       this.props.locale === null ||
-      moment.locales().indexOf(this.props.locale || 'en') === -1
+      moment.locales().indexOf(this.props.locale || 'ru') === -1
     ) {
-      this.setLocale('en')
+      this.setLocale('ru')
     } else {
-      this.setLocale(this.props.locale || 'en')
+      this.setLocale(this.props.locale || 'ru')
     }
   }
 
